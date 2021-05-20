@@ -1,0 +1,6 @@
+
+.head {background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  radial-gradient(#a86aff 1.1500000000000001px, transparent 1.1500000000000001px), radial-gradient(#a86aff 1.1500000000000001px, #e5e5f7 1.1500000000000001px);
+    background-size: 46px 46px;
+    background-position: 0 0,23px 23px;}
