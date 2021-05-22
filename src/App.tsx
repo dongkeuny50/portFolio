@@ -1,42 +1,25 @@
 import React from 'react';
 import './App.css';
 import * as frontImage from './myface.jpeg';
+import * as createLogo from './createlogo.png';
 import { Box, } from '@material-ui/core';
-
+import {  BrowserRouter, Route} from 'react-router-dom';
 import Header from './Header';
+import About from './About';
 function App() {
   
-  const logodiv = {
-    display: "flex",
-    width: 400,
-    height: 400,
-    marginLeft: 400,
-    borderRadius: 200,
-    borderColor: "black",
-    border: "1px solid #555",
-    backgroundColor: "grey",
-    justifyContent: "center",
-}
   const img = frontImage.default;
+  const logoimg = createLogo.default;
   return (
     <div className="App">
       <Header />
-      <main className="App-main">
-        <Box height="60px" />
-        <div style={{display: "flex"}}>
-          <div style={logodiv}>
-            <img style={{ height: 400,borderRadius: 200,}} src={img} alt="Test"></img>
-          </div>
-          <div>
-            <div style={{ height: 100}}></div>
-            <div style={{ height: 100}}></div>
-            <div style={{ height: 100}}></div>
-            <div style={{ height: 100}}></div>
-          </div>
-        </div>
-        <Box height="60px" />
-      </main>
-
+      <BrowserRouter>
+    <switch>
+    <Route path="/" component={About} />
+    <Route path="/Work" component={About} />
+    <Route path="/Contact" component={About} />
+    </switch>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,0 +1,8 @@
+
+.App-main {
+  background: -webkit-linear-gradient(110deg, rgb(209, 171, 255) 22%, rgba(165, 255, 247, 0) 22%), -webkit-linear-gradient(110deg, #fffda0 77%, #ffde72 77%);
+  min-height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -11,8 +11,8 @@
 }
 
 .App-main {
-  background-color: #f1f1f1;
-  min-height: 88vh;
+  background: -webkit-linear-gradient(110deg, rgb(174, 107, 255) 22%, rgba(165, 255, 247, 0) 22%), -webkit-linear-gradient(110deg, #FCFA51 77%, #ffc608 77%);
+  min-height: 93vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
